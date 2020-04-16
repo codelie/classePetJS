@@ -1,5 +1,3 @@
-//include('ClasseUtil.php');
-
 class pet{
     /*
     * Atributos / características da classe
@@ -51,10 +49,9 @@ class pet{
         return this.getPorte;
     }
 
-
 } // fim classe pet
 
-
+/* classe dogPet - herança da classe pet */
 class dogPet extends pet{
 
     constructor(nome, data_nascimento, pelagem, porte, raca) 
@@ -94,6 +91,7 @@ class dogPet extends pet{
 
 } // fim classe dogPet
 
+/* classe catPet - herança da classe pet */
 class catPet extends pet{
 
     constructor(nome, data_nascimento, pelagem, porte, raca) 
@@ -132,6 +130,8 @@ class catPet extends pet{
 
 } // fim classe catPet
 
+/* Instanciação de objeto pela classe pet */
+/*
 var objPet1 = new pet('Izabelita Belinha Bela','03/04/2015','curta marrom tigrada', 'pequeno');
 
 console.log(objPet1.meuNome());
@@ -139,6 +139,7 @@ console.log(objPet1.minhaDataNascimento());
 console.log(objPet1.minhaPelagem());
 console.log(objPet1.meuPorte());
 
+/* Outra instanciação de objeto pela classe pet */
 /*
 var objPet2 = new pet('Leblon Bolota Bolon','03/03/2012','curta preto e branco malhada', 'médio');
 
@@ -146,8 +147,9 @@ console.log(objPet2.meuNome());
 console.log(objPet2.minhaDataNascimento());
 console.log(objPet2.minhaPelagem());
 console.log(objPet2.meuPorte());
-*/
 
+*/
+/* Instanciação de objeto pela classe dogPet */
 /*
 var Belinha = new dogPet('Izabelita Belinha Bela','03/04/2015','curta marrom tigrada', 'pequeno','RND');
 
@@ -158,8 +160,10 @@ console.log(' Minha Data de Nascimento  é '+Belinha.minhaDataNascimento() );
 console.log(' Minha Pelagem é: '+Belinha.minhaPelagem());
 console.log(' Meu Porte é '+Belinha.meuPorte() );
 console.log(' Minha Raça é: '+Belinha.minhaRaca());
+
 */
-/*
+/* Instanciação de objeto pela classe catPet */
+
 var Bolota = new catPet('Leblon Bolota Bolon','03/03/2012','curta preto e branco malhada', 'médio','RND');
 
 console.log('Minha Categoria: '+Bolota.minhaCategoria());
@@ -169,4 +173,3 @@ console.log(' Minha Data de Nascimento  é '+Bolota.minhaDataNascimento() );
 console.log(' Minha Pelagem é: '+Bolota.minhaPelagem());
 console.log(' Meu Porte é '+Bolota.meuPorte() );
 console.log(' Minha Raça é: '+Bolota.minhaRaca());
-*/
